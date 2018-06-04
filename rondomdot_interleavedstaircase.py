@@ -18,7 +18,7 @@ expInfo['expName'] = expName
 
 #make a text file to save data
 fileName = expInfo['subjectID'] + '_' + dateStr
-dataFile = open(fileName+'.csv', 'w')
+dataFile = open('data/'+fileName+'.csv', 'w')
 dataFile.write('Trial,Direction,Coherence,Response,ResponseCode,ResponseCorrect,stairCase\n')
 
 

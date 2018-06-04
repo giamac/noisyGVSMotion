@@ -23,7 +23,7 @@ expInfo['expName'] = expName
 
 #make a text file to save data
 fileName = 'S' + expInfo['subjectID'] + '_B' + str(expInfo['condition']) + '_' + dateStr
-dataFile = open(fileName+'.csv', 'w')
+dataFile = open('data/'+fileName+'.csv', 'w')
 dataFile.write('Trial,Direction,Coherence,Response,ResponseCode,ResponseCorrect,Condition,VP,Thresholdf\n')
 
 # Define Variables & Stimuli
@@ -45,12 +45,12 @@ threshold = expInfo['threshold']
 
 #Create 3 blocks with different intensities. 
 
-levels = [threshold, 4.6 * threshold, 0.6 * threshold] * 3
+levels = [threshold, 4.6 * threshold, 0.6 * threshold] * 1
 random.shuffle(levels)
 
 # Create thirty trials per block, at the moment 5
 
-directions = [0, 180] * 30
+directions = [0, 180] * 1
 
 
 instr1 = u'''Vielen Dank für deine Teilnahme am Experiment. \n

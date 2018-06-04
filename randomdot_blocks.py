@@ -62,7 +62,7 @@ instr2 = u'''Wenn du denkst, die Punkte bewegen sich nach links, drücke \n
 \t\t\t\t'f' \n
 Wenn du denkst, die Punkte bewegen sich nach rechts, drücke\n
 \t\t\t\t'j' \n
-Bitte antworte erst, wenn der Stimulus verschwunden ist. \nj
+Bitte antworte erst, wenn der Stimulus verschwunden ist. \n
 Drücke die Leertaste um mit der Instruktion weiterzufahren.'''
 
 

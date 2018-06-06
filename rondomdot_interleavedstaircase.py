@@ -30,7 +30,7 @@ win = visual.Window([2048,1152],fullscr = True, allowGUI=False, monitor='testMon
 
 dots = visual.DotStim(win=win, name='dots',
     nDots=100, dotSize=3,
-    speed=0.05, dir=1.0, coherence=1.0,
+    speed=5, dir=1.0, coherence=1.0,
     fieldPos=[0.0, 0.0], fieldSize=400,fieldShape='circle',
     signalDots='same', noiseDots='direction',dotLife=3,
     color=[1.0,1.0,1.0], colorSpace='rgb', opacity=1, depth=1.0)
@@ -63,8 +63,8 @@ steps = [0.05,0.05,0.04,0.04,0.03,0.03,0.02,0.02,0.01,0.01]
 # What I did here was start one from high and one from low coherence, these are interleaved, see documentation for params
 # You could also think about doing one for leftward and one for rightward motion
 conditions=[
-    {'label':'low', 'startVal': 0.05, 'stepType' : 'lin', 'minVal' : 0.01, 'maxVal' : 1, 'nUp' : 1, 'nDown' : 1, 'stepSizes' : steps},
-    {'label':'high','startVal': 0.95, 'stepType' : 'lin', 'minVal' : 0.01, 'maxVal' : 1, 'nUp' : 1, 'nDown' : 1, 'stepSizes' : steps}]
+    {'label':'low', 'startVal': 0.05, 'stepType' : 'lin', 'minVal' : 0.01, 'maxVal' : 1, 'nUp' : 1, 'nDown' : 2, 'stepSizes' : steps},
+    {'label':'high','startVal': 0.95, 'stepType' : 'lin', 'minVal' : 0.01, 'maxVal' : 1, 'nUp' : 1, 'nDown' : 2, 'stepSizes' : steps}]
 
 
 stairs = data.MultiStairHandler(conditions=conditions, nTrials=100)
@@ -96,7 +96,6 @@ for thisIncrement in stairs: #will step through the staircase
     DirectionCoded = DirectionCue*2-1 #will be either -1(right) or 1(left)
     Direction = DirectionCue*180 #will be either 0(right) or 180(left)
     dots.setDir(Direction)
-
 
     #set orientation of probe
     dots.setFieldCoherence(thisIncrement[0])
@@ -130,6 +129,5 @@ for thisIncrement in stairs: #will step through the staircase
     elif thisKey == 'j':
         resp = 0
 
-    coher = DirectionCoded * thisIncrement[0]
-    dataFile.write('%i,%i,%.2f,%s,%i,%i,%s\n' %(trial,Direction,coher,thisKey,resp,thisResp,thisIncrement[1]['label']))
+    dataFile.write('%i,%i,%.2f,%s,%i,%i,%s\n' %(trial,Direction,thisIncrement[0],thisKey,resp,thisResp,thisIncrement[1]['label']))
     core.wait(0.5)

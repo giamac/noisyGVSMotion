@@ -47,7 +47,7 @@ threshold = expInfo['threshold']
 
 #Create 3 blocks with different intensities. 
 
-levels = [threshold, 4.6 * threshold, 0.6 * threshold] * 1
+levels = [threshold, 2 * threshold, 0.5 * threshold] * 1
 random.shuffle(levels)
 
 # Create thirty trials per block, at the moment 5
@@ -106,7 +106,7 @@ for thisTrial in trials: #handler can act like a for loop
     trial += 1
     
     #Make a pause after a block
-    if trial == 101 or trial == 20:
+    if trial == 101 or trial == 201:
         pausetxt.draw()
         fixation.setAutoDraw(False)
         win.flip()

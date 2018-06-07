@@ -36,7 +36,7 @@ win = visual.Window([2048,1152],fullscr = True, allowGUI=False, monitor='testMon
 
 dots = visual.DotStim(win=win, name='dots',
     nDots=100, dotSize=3,
-    speed=5, dir=1.0, coherence=1.0,
+    speed=1.6, dir=1.0, coherence=1.0,
     fieldPos=[0.0, 0.0], fieldSize=400,fieldShape='circle',
     signalDots='same', noiseDots='direction',dotLife=3,
     color=[1.0,1.0,1.0], colorSpace='rgb', opacity=1, depth=0.0)
@@ -47,7 +47,7 @@ threshold = expInfo['threshold']
 
 #Create 3 blocks with different intensities. 
 
-levels = [threshold, 2 * threshold, 0.5 * threshold] * 1
+levels = [threshold, 2 * threshold, 0.3 * threshold] * 1
 random.shuffle(levels)
 
 # Create thirty trials per block, at the moment 5

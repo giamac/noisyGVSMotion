@@ -1,0 +1,13 @@
+Trial,Direction,Coherence,Response,ResponseCode,ResponseCorrect,stairCase
+1,0,-0.05,j,0,1,low
+2,180,0.95,j,0,0,high
+3,0,-1.00,j,0,1,high
+4,0,-0.01,j,0,1,low
+5,180,0.01,f,1,1,low
+6,0,-0.95,j,0,1,high
+7,180,0.01,j,0,0,low
+8,0,-0.90,j,0,1,high
+9,0,-0.85,f,1,0,high
+10,0,-0.06,f,1,0,low
+11,180,0.89,f,1,1,high
+12,180,0.11,f,1,1,low

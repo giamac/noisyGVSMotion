@@ -1,0 +1,29 @@
+6.8514 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+7.9966 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x13577730>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1366,  768]), stereo=False, units=u'pix', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+7.9967 	EXP 	window1: recordFrameIntervals = False
+8.1630 	EXP 	window1: recordFrameIntervals = True
+8.3462 	EXP 	window1: recordFrameIntervals = False
+8.3614 	EXP 	Created dots = DotStim(autoLog=True, coherence=1.0, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=3, dotSize=2, element=None, fieldPos=array([ 0.,  0.]), fieldShape='circle', fieldSize=array([ 1.,  1.]), nDots=100, name='dots', noiseDots='direction', opacity=1.0, rgb=array([ 1.,  1.,  1.]), signalDots='same', speed=0.1, units=u'pix', win=Window(...))
+8.3620 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+8.3622 	EXP 	New trial (rep=0, index=0): None
+8.3786 	EXP 	dots: autoDraw = True
+8.8792 	EXP 	dots: autoDraw = False
+9.8631 	EXP 	New trial (rep=1, index=0): None
+9.8794 	EXP 	dots: autoDraw = False
+9.8794 	EXP 	dots: autoDraw = True
+10.3794 	EXP 	dots: autoDraw = False
+10.7300 	DATA 	Keypress: j
+10.7308 	EXP 	New trial (rep=2, index=0): None
+10.7465 	EXP 	dots: autoDraw = False
+10.7465 	EXP 	dots: autoDraw = True
+11.2460 	EXP 	dots: autoDraw = False
+11.5128 	DATA 	Keypress: f
+11.5135 	EXP 	New trial (rep=3, index=0): None
+11.5290 	EXP 	dots: autoDraw = False
+11.5290 	EXP 	dots: autoDraw = True
+11.7959 	DATA 	Keypress: j
+11.7965 	EXP 	New trial (rep=4, index=0): None
+11.8123 	EXP 	dots: autoDraw = False
+11.8123 	EXP 	dots: autoDraw = True
+11.9632 	DATA 	Keypress: f
+12.0319 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,8 @@
+4.4618 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1366, 768]. Using actual size
+5.3754 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x1D77E430>, multiSample=False, name='window1', numSamples=2, pos=[0, 0], screen=0, size=array([1366,  768]), stereo=False, units=u'pix', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType=u'pyglet')
+5.3755 	EXP 	window1: recordFrameIntervals = False
+5.5413 	EXP 	window1: recordFrameIntervals = True
+5.7244 	EXP 	window1: recordFrameIntervals = False
+5.7587 	EXP 	Created dots = DotStim(autoLog=True, coherence=1.0, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, dir=0.0, dotLife=3, dotSize=2, element=None, fieldPos=array([ 0.,  0.]), fieldShape='circle', fieldSize=array([ 1.,  1.]), nDots=1000, name='dots', noiseDots='direction', opacity=1.0, rgb=array([ 1.,  1.,  1.]), signalDots='same', speed=3, units=u'pix', win=Window(...))
+5.7994 	EXP 	dots: autoDraw = True
+9.7558 	EXP 	window1: mouseVisible = True
